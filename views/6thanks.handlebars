@@ -1,0 +1,38 @@
+
+<h1 id="thanks-for-signing">Thank you for signing the petition!</h1>
+<a href="/logout" id="signOutBtn"><img src="/signout.png" alt="signout"></a>
+<div class="user-info">
+    <img id='theavatar' src="data:image/png;base64,{{image}}" alt="my photo">
+    <span> &nbsp; &nbsp; &nbsp; Welcome, {{hisName}}&nbsp; &nbsp;{{flag}}</span>
+    
+</div>
+<img id="yoursignature" src="{{final}}" alt="your-signature">
+<br>
+<br>
+<div class="a-tags-thanks-page">
+    <a href="/signers" id="number-thanks-page">All <b id="number-t-p">{{ numberofItems }}</b> signers can be viewed here</a>
+</div>
+<img src="/field.jpeg" id="backgroundimage" alt="field">
+{{!-- Navigation --}}
+<script defer src="/app.js"></script>
+<div id="backdrop"></div>
+<div id="navigation-thanks">
+    <ul class="nav-links">
+        <li>
+            <a href="/redraw" id="delete-thanks-page">Delete your signature</a>
+        </li>
+        
+        <li>
+            <a href="/edit" id="edit-thanks-page">Edit your profile</a>
+        </li>
+        <li>
+            <a href="/deletion" id="deletionBtn">Delete the account</a>
+        </li>
+    </ul>
+    
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</div>

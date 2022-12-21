@@ -1,0 +1,22 @@
+{{!-- <script defer src="myphoto.js"></script> --}}
+<h3 id="user-data-userprofile-page">Please, share some additional info with us:</h3><br>
+<h4 id="not-mandatory-answers-text">(The answers are not mandatory!😊)</h4>
+{{#if uploadTheImage}}
+<p id="error">*** Upload the image! PLEASE!!! ***</p>
+{{/if}}
+<form action="/user-profile" method="POST" id="form-user-profile-page" enctype="multipart/form-data">
+    <input type="text" name="ageValue" placeholder="Age">
+    <input type="text" name="cityValue" placeholder="City">
+    <input type="text" name="homepageValue" placeholder="Your website">
+    <label for="photo"> Please, upload your photo * </label>
+    <input type="file" id="photo" name="myphoto" accept="image/png, image/jpeg" >
+    <label for="country"> Please, choose your country *</label><select id="country" name="country" class="form-control">
+        {{#each countries}}
+            <option value="{{code}}">{{name}}</option>
+        {{/each}}
+    </select>
+    <button type="submit" href="/signature"> <b> Submit</b></button>
+</form>
+
+<img src="/field.jpeg" id="backgroundimage" alt="field">
+

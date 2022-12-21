@@ -1,0 +1,15 @@
+{{!-- <script defer src="/visibility.js"></script> --}}
+<h3><em>Please, sign up here:</em></h3><br>
+{{#if showError}}
+<p id="error">FILL THE DATA!</p>
+{{/if}}
+<form action="/register" method="POST" id="form-register-page">
+    <input type="text" name="firstNameValues" placeholder="First Name" >
+    <input type="text" name="secondNameValues" placeholder="Second Name">
+    <input type="text" name="emailValue" placeholder="Email">
+    <input type="password" name="passwordValue" placeholder="Password" id="password" >
+    {{!-- <i class="bi bi-eye-slash" id="togglePassword"></i> --}}
+    <button type="submit" href="/user-profile"> <b> Submit</b></button>
+</form>
+
+<img src="/field.jpeg" id="backgroundimage" alt="field">

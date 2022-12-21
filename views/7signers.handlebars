@@ -1,0 +1,46 @@
+<a href="/logout" id="signOutBtn"><img src="/signout.png" alt="signout"></a>
+<ol id="signers-list">
+    {{#each allDataRows}}
+    <li id="lines-signers-page">
+        {{#if homepage}}
+        <a href="{{homepage}}" target="_blank" id="links-signers-page"> {{ first}} {{last}}</a> {{age}}
+        {{else}}
+        {{ first}} {{last}} {{age}}
+        {{/if}}
+
+        {{#if city}}
+        <a href="/signers/{{city}}" id="cities-signers-page">{{city}}</a> 
+        {{else}}
+        {{city}}
+        {{/if}}
+    </li>
+    {{/each}}
+</ol>
+<img src="/field.jpeg" id="backgroundimage" alt="field">
+
+{{!-- Navigation --}}
+<script defer src="/app.js"></script>
+<div id="backdrop"></div>
+<div id="navigation-thanks">
+    <ul class="nav-links">
+        <li>
+            <a href="/redraw" id="delete-thanks-page">Delete your signature</a>
+        </li>
+        <li>
+            <a href="/edit" id="edit-thanks-page">Edit your profile</a>
+        </li>
+        <li>
+            <a href="/thanks" id="edit-thanks-page">Go to the thanks page</a>
+        </li>
+        <li>
+            <a href="/deletion" id="deletionBtn">Delete the account</a>
+        </li>
+    </ul>
+
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</div>
+

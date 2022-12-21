@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+package-lock.json
+secrets.json
+.env
+notes.md
+express+handlebars
+notes part 4.md
+notes part 5.md
