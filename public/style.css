@@ -1,0 +1,137 @@
+#canvas {
+  cursor: crosshair;
+  border: 1px solid black;
+   margin-left: 10vw;
+   margin-top: 5vw;
+   background-color: white;
+}
+.btn {
+    width: 10vw;
+    height: 2vw;
+    margin-left: 45vw;
+}
+.btn1{
+    width: 25%;
+    height: 15%;
+    margin-top: 5vw;
+    margin-left: 20vw;
+}
+.btn2{
+    width: 25%;
+    height: 15%;
+    margin-top: 5vw;
+    margin-left: 10vw;
+}
+
+.btn3{
+    width: 15%;
+}
+body {
+    background-color: steelblue;
+    /*background-image: url('Images/abuse.jpg');
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 60%;*/
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#form {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+#formSign {
+    padding-left: 25vw;
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+h3{
+    color: white;
+    padding-bottom: 10vw;
+    padding-top: 10vw;
+}
+.page{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+}
+#form{
+    padding-top: 4vw;
+}
+.signimg {
+    width: 50px;
+}
+
+#form{
+    padding-top: 4vw;
+}
+.signimg {
+    width: 50px;
+}
+.petit {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+  padding-top: 10vw;
+}
+.edit {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+}
+.profil {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+.signrs {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+.thank{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+.city {
+     position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+.logOutBtn {
+     width: 25%;
+    height: 15%;
+    margin-top: 5vw;
+    margin-left: 20vw;
+}

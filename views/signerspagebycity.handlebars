@@ -1,0 +1,11 @@
+<div class="city">
+    <p>Here are a list of all who has signed the understaking to fight against child abuse. From the ciy of {{city}}</p>    
+      {{#signers}}  
+    <p>{{#if homepage}}<a href="">{{firstname}} {{lastname}} </a> {{age}} <a href="/signers/{{city}}"></a></p>
+    {{else}}
+    <p>{{firstname}} {{lastname}}  {{age}} <a href="/signers/{{city}}"> </a></p>
+    {{/if}}
+    {{/signers}}
+    <button class="logOutBtn">LOG OUT</button>
+</div>
+</form>

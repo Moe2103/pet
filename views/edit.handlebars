@@ -1,0 +1,23 @@
+
+<form action="/edit" method="POST">
+<div class="edit">
+  <h3>Let's put an end to child abuse</h3>
+{{#user}}
+  <label for="fname">First name:</label>
+  <input type="text" id="fname"  name="fname" value="{{firstname}}" size="25"><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname" value="{{lastname}}" size="25"><br>
+  <label for="lname">Email Add:</label>
+  <input type="text" id="emailAddr" name="email" value="{{email}}" size="25"><br>
+  <label for="lname">Password:</label>
+  <input type="text" id="passwd" name="password" value="" size="26"><br>
+   <label for="fname">Age:</label>
+  <input type="text" id="agee" name="age" id="txt" value="{{age}}"><br><br>
+  <label for="lname">City:</label>
+  <input type="text" id="cityy" name="city" id="txt" value="{{city}}"><br><br>
+  <label for="lname">Homepage:</label>
+  <input type="text" id="home" name="homepage" value="{{homepage}}"><br><br>
+  <button class="btn2">UPDATE</button>
+   {{/user}}
+</div>
+</form>
