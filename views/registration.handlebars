@@ -1,0 +1,57 @@
+<div class="container-register">
+
+    <div id="text-register">
+        <h1>Add some text </h1>
+        <h3> Add more text</h3>
+
+        <p>Sign up here!</p>
+
+        <div id="register">
+            <form action="/registration" method="POST">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+                <input
+                    type="text"
+                    id="firstName"
+                    placeholder="Name"
+                    name="firstName"
+                />
+                <input
+                    type="text"
+                    id="lastName"
+                    placeholder="Last Name"
+                    name="lastName"
+                />
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="something@something.com"
+                    required
+                    name="email"
+                />
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="password"
+                    required
+                    name="password"
+                />
+
+                <button type="submit" id="registerB">Submit here.</button>
+
+            </form>
+        </div>
+    </div>
+    {{#if err}}
+        <p id="errorRegister">
+            Something went wrong. Ooops!</p>
+    {{/if}}
+
+    <img id="imgRegister" src="" alt="" />
+
+    <div id="goToLogin">
+
+        <a href="/login">Go</a>
+        to log in
+    </div>
+
+</div>

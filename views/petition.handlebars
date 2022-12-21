@@ -1,0 +1,20 @@
+<h1>Some random petition.</h1>
+
+<span class="text">Some random stuff Some random explanation.</span>
+
+{{#if error}}
+    <span class="error">Sign !!</span>
+{{/if}}
+
+<div class="inputs">
+    <form action="/petition" method="POST" id="inputs">
+        <input type="text" name="firstName" placeholder="Name" />
+        <input type="text" name="secondName" placeholder="Last Name" />
+        <input id="hidden" value="" style="display: none;" name="signature" />
+        <canvas id="canvas" width="600" height="150" name="canvas"></canvas>
+        <button type="submit"> <b> Submit</b></button>
+
+    </form>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="canvas.js"></script>

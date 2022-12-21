@@ -1,0 +1,32 @@
+<div class="container-login">
+    <div id="text-login">
+        <h1>Add some text here </h1>
+
+        <div id="login">
+            <form method="POST">
+                <input type="hidden" name="_csrf" value="{{csrfToken}}" />
+                <input
+                    type="email"
+                    id="email"
+                    required
+                    placeholder="email"
+                    name="email"
+                />
+                <input
+                    type="password"
+                    id="password"
+                    required
+                    placeholder="password"
+                    name="password"
+                />
+                <button type="submit" id="loginB">LOG IN</button>
+            </form>
+        </div>
+        {{#if err}}
+            <p>Something went wrong. Ooops!</p>
+        {{/if}}
+
+        <a id="loginA" href="/registration">Or click here to register </a>
+    </div>
+
+</div>

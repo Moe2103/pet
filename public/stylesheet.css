@@ -1,0 +1,76 @@
+canvas {
+    cursor: crosshair;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+body {
+    background-image: linear-gradient(
+        rgba(236, 234, 225, 0.5),
+        rgba(11, 9, 119, 0.759)
+    );
+}
+
+body h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-register {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+
+.register {
+    padding: 15px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgb(0 0 0 / 60%), 0 15px 10px rgb(0 0 0 / 22%);
+    width: 25%;
+    border: 3px solid black;
+    font-size: 21px;
+}
+
+.Inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registerInput {
+    width: 100%;
+    height: 35px;
+}
+
+.registerB {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanksBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.editBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

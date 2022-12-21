@@ -1,0 +1,28 @@
+<div class="signaturesBody">
+
+   
+
+    <div class="signaturesPara">
+        <h2>Our Signers so far:</h2>
+    </div>
+
+    <div class="allSignatures">
+        <ul>
+            {{#rows}}
+                <li>
+                    {{#if homepage}}
+                        <a href="{{homepage}}"  target="_blank">
+                                            {{/if}}
+                            <b>{{first_name}}
+                                {{last_name}}
+                            </b></a>
+
+                    {{age}}
+
+                    <a href="/signers/{{city}}">{{city}}</a></li>
+            {{/rows}}
+        </ul>
+    </div>
+    <a class="backButton" href="/thanks">Go Back</a>
+
+</div>

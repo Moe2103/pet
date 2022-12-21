@@ -1,0 +1,26 @@
+<div class="signaturesBody">
+
+    <img id="petitionLogo" src="" alt="" />
+
+    <div class="signaturesPara">
+        <h2>Our Signers from {{city}}:</h2>
+    </div>
+
+    <div class="allSignatures">
+        <ul>
+            {{#rows}}
+                <li>
+                    <a href="{{homepage}}"></a><b>{{first_name}}
+                        {{last_name}}</b>
+                    {{age}}
+                    {{city}}</li>
+            {{/rows}}
+        </ul>
+    </div>
+
+    <a class="backButton" href="/signers">Back to Signers</a>
+    <a class="backButton" href="/edit">Back to Edit Profile</a>
+    <a class="backButton" href="/edit">Back to Edit Profile</a>
+    <a id="logout" href="/logout"> logout </a>
+
+</div>
