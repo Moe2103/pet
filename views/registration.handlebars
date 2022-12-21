@@ -1,0 +1,23 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<form action="/registration" method="POST" class="petitionForm">
+    <div class="petitionForm">
+        <label id="name">Enter your first name: </label>
+        <input type="text" name="firstname" required />
+    </div>
+    <div class="petitionForm">
+        <label id="name">Enter your last name: </label>
+        <input type="text" name="lastname" required />
+    </div>
+    <div class="petitionForm">
+        <label id="email">Enter your email: </label>
+        <input type="text" name="email" required />
+    </div>
+    <div class="petitionForm">
+        <label id="password">Please select a password </label>
+        <input type="password" name="password" required />
+    </div>
+    <button>Register</button>
+</form>

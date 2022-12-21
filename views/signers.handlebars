@@ -1,0 +1,41 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<h1>Here are all our supporters </h1>
+
+<div> 
+
+{{#allSigners}}
+{{#if linkedin}}<a class="signer-link" href={{linkedin}}>{{firstname}} {{lastname}} </a> {{age}} <a href="/signers/{{city}}"</a>
+{{else}}
+{{firstname}}{{lastname}} {{age}} <a href="/signers/{{city}}">{{city}}</a>
+{{/if}}
+{{/allSigners}}
+<a href="/signers page by city"></a>
+
+</div>
+
+
+<h1>{{petitionName}}</h1>
+
+<img src="signers" alt="" />
+
+<h2>This the number of peopled who support us {{count}} </h2>
+
+{{!-- <h3>These are out supportes {{firstname}} </h2>
+
+<h4>These are out supportes {{lastname}} </h2>
+
+<h5>These are out supportes {{age}} </h2>
+
+<h6>These are out supportes {{city}} </h2> --}}
+
+
+{{! NEEED to figure out to render the image from my table to the the html }}
+
+{{! You will to implement some logic how to retrive the number in your express app from 
+the DB right before you call res.render for the according route
+---- Use the function we have written before in the db.js file 
+---- Provide the information about the count when you call res.render for the handlebarview 
+--- Similiar logic as in the thanks page}}

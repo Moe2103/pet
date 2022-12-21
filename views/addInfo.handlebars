@@ -1,0 +1,24 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<form action="/addInfo" method="POST" class="petitionForm">
+    <div class="petitionForm">
+        <label id="city">Where do you live? </label>
+        <input type="text" name="city" />
+    </div>
+    <div class="petitionForm">
+        <label id="age">How old are you?</label>
+        <input type="text" name="age" />
+    </div>
+    <div class="petitionForm">
+        <label id="linkedIn">What is your linkedIn handle?</label>
+        <input type="text" name="linkedIn" />
+    </div>
+    <button>Submit</button>
+
+    <a class="editProfil" href="/editPage">
+        <button Edit Profil></button>
+    </a>
+
+</form>

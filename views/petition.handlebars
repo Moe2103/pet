@@ -1,0 +1,40 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+{{! If there are invalid values make sure to rerender the petition page with some
+extra information for the handdlebars view to show some error }}
+<div class="title">
+    <h1>Welcome to the Petition Page against {{petitionName}}</h1>
+</div>
+
+<p style="color: black; font-size: 20px;">
+    "Dear fellow Apple users and supporters of innovation, We are writing to ask
+    for your support in our campaign to reduce the unfair and excessive Apple
+    IOS tax on all purchases made on Apple devices. As you may know, Apple
+    currently charges a tax of 30% on all purchases made through its App Store,
+    which disproportionately affects small and independent developers who rely
+    on the App Store to distribute their products. This tax not only puts a
+    financial burden on developers, but it also stifles innovation and
+    competition within the industry. By imposing such a high tax, Apple
+    effectively maintains its monopoly position and hinders the growth of new
+    and innovative products. We believe that this tax is unfair and unjust, and
+    we call on Apple to reduce it to a fair and reasonable level. Join us in
+    signing this petition to send a message to Apple that we demand change.
+    Together, we can create a more equitable and innovative App Store ecosystem.
+    Thank you for your support."</p>
+
+<form action="/petition" method="POST" class="petitionForm">
+    <div>
+        <input class="signs" type="hidden" name="signatures" required />
+        <canvas width="400px" height="100px">
+        </canvas>
+    </div>
+    <button class="submitButton">Sign Petition</button>
+</form>
+<script src="/canva.js"></script>
+
+{{! Update the hidden <input> field value after some signing on the cnavas field with
+canvas.toDate(URL) to convert the image data to bas64 encoded string. This string should
+be set as value to the hidden <input> element. This string will later be send when 
+submitting the form }}

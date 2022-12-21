@@ -1,0 +1,50 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<form action="/editPage" method="POST" class="petitionForm">
+
+    <div class="petitionForm">
+        <label id="name">Change first name </label>
+        <input
+            type="text"
+            name="firstname"
+            required
+            value="{{user.firstname}}"
+        />
+    </div>
+    <div class="petitionForm">
+        <label id="name">Change last name </label>
+        <input type="text" name="lastname" required value="{{user.lastname}}" />
+    </div>
+    <div class="petitionForm">
+        <label id="email">Change email </label>
+        <input type="text" name="email" required value="{{user.email}}" />
+    </div>
+    {{!-- <div class="petitionForm">
+        <label id="password">Change password </label>
+        <input
+            type="password"
+            name="password"
+            required
+            value="{{user.password}}"
+        />
+    </div> --}}
+
+    <div class="petitionForm">
+        <label id="city">Change city </label>
+        <input type="text" name="city" value="{{user.city}}" />
+    </div>
+    <div class="petitionForm">
+        <label id="age">Change age </label>
+        <input type="text" name="age" value="{{user.age}}" />
+    </div>
+    <div class="petitionForm">
+        <label id="linkedIn">Change linkIn</label>
+        <input type="text" name="linkedIn" value="{{user.linkedin}}" />
+    </div>
+    <button>Submit</button>
+
+</form>
+
+{{! form will make POST request wheb form was submitted by clicking on the button }}

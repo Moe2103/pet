@@ -1,0 +1,17 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<form action="/login" method="POST" class="petitionForm">
+    <div class="petitionForm">
+        <label for="email">Enter your email: </label>
+        <input type="text" name="email" required />
+    </div>
+    <div class="petitionForm">
+        <label for="password">Please enter your password: </label>
+        <input type="password" name="password" required />
+    </div>
+    <button>Submit</button>
+</form>
+
+{{! In order to end the session/log out, I will set req.session to null }}

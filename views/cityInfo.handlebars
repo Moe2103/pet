@@ -1,0 +1,27 @@
+{{#if errorMessage}}
+    <div class="error-message">{{errorMessage}}</div>
+{{/if}}
+
+<div>
+    <p>City support</p>
+    {{#allSigners}}
+    <p>{{#if linkedIn}}<a href="">{{firstname}} {{lastname}} </a> {{age}} <a href="/signers/{{city}}"></a></p>
+    {{else}}
+    <p>{{firstname}} {{lastname}} {{age}} <a href="/signers/{{city}}"><a/></p>
+    {{/if}}
+    {{/allSigners}}
+
+</div>
+<h1>Here are the supporters in your city {{petitionName}}</h1>
+
+
+{{!-- <div>
+    <p>City support</p>
+    {{#allSigners}}
+    <p>{{#if linkedIn}}<a href="">{{firstname}} {{lastname}} </a> {{age}} <a href="/signers/{{city}}"></a></p>
+    {{else}}
+    <p>{{firstname}} {{lastname}} {{age}} <a href="/signers/{{city}}"><a/></p>
+    {{/if}}
+    {{/allSigners}}
+
+</div> --}}

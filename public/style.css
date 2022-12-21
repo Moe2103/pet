@@ -1,0 +1,157 @@
+body {
+    background-color: rgb(172, 173, 173);
+}
+
+/* h1 {
+    font-size: 40px;
+    text-align: center;
+    background-color: whitesmoke;
+    font-family: "Times New Roman", Times, serif;
+} */
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main {
+    text-align: center;
+    min-width: 100vw;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: rgb(46, 45, 45);
+    color: rgb(122, 122, 122);
+    z-index: 99;
+}
+
+.topbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.topbar li {
+    flex: 1;
+}
+
+.topbar a {
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(173, 173, 173);
+}
+
+.topbar a:hover {
+    color: whitesmoke;
+}
+
+.titleL {
+    /* position: fixed;
+    top: 10%;
+    left: 20%;
+    right: 20%; */
+    font-size: xx-large;
+    /* width: 120px;
+    height: 220px; */
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.title {
+    /* position: fixed;
+    top: 10%;
+    left: 20%;
+    right: 20%; */
+    font-size: xx-large;
+    /* width: 120px;
+    height: 220px; */
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video {
+    /* position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 20%; */
+    /* width: 920px;
+    height: 280px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex: 1; */
+}
+
+.redirect {
+    /* position: absolute; */
+    /* top: 20%;
+    left: 20%;
+    right: 20%;
+    width: 620px;
+    height: 280px; */
+    color: black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* .container2 {
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+} */
+
+form.petitionForm {
+    display: flex;
+    /* display: table; */
+    align-items: center;
+    flex-direction: column;
+}
+
+div.formPetition {
+    display: table-row;
+}
+
+label,
+input {
+    display: table-cell;
+    margin-bottom: 10px;
+}
+
+label {
+    padding-right: 10px;
+}
+
+canvas {
+    cursor: crosshair;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+.error-message {
+    background-color: red;
+}
+
+.signers {
+    color: black;
+}
+
+main .signer-link {
+    color: black;
+}
