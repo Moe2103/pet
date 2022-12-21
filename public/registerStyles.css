@@ -1,0 +1,97 @@
+body {
+    font-family: "PT Sans Caption", "Helvetica Neue", Arial, Helvetica, Geneva,
+        sans-serif;
+    font-size: 3vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    max-width: 420px;
+    border-radius: 5px;
+    border: 10px;
+    padding: 10px;
+    background-color: #11181f;
+    opacity: 90%;
+    align-items: center;
+}
+
+form input:hover {
+    background-color: cadetblue;
+}
+
+form input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-icon {
+    font-family: Geneva, sans-serif;
+    font-size: 6vh;
+}
+
+.petition {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 1em;
+    box-sizing: border-box;
+    color: white;
+    background: url("/naja-bertolt-jensen-oxntvdNJb9o-unsplash.jpg") center
+        center no-repeat;
+
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.petition-title {
+    max-width: 16em;
+    margin: 10px 10px;
+    font-size: 10vh;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+    text-shadow: 20px 16px 18px black;
+    padding: 10px;
+
+    border-radius: 5px;
+}
+
+.petition-footer {
+    display: flex;
+    margin-bottom: 1em;
+    justify-content: center;
+}
+
+.petition-header {
+    align-content: center;
+}
+
+.button {
+    padding: 0.5em 0.67em;
+    color: white;
+    text-decoration: none;
+    border: 0.1em solid white;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 3px rgb(57 50 50 / 79%);
+}
+
+.button-primary {
+    color: black;
+    background-color: white;
+}
+
+article {
+    max-width: 36em;
+    margin: 0 auto;
+    padding: 1em;
+}

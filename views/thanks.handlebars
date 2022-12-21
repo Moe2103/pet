@@ -1,0 +1,26 @@
+<section class="petition">
+
+    {{#sigArray}}
+        <h1 class="bolder">Thanks for your signature!</h1>
+        <img src="{{signature}}" alt="" />
+
+    {{/sigArray}}
+    <h2>You can also <a href="/edit">Edit</a> your Profile</h2>
+    <h2>Check out all <a href="/signers">Signers</a> !</h2>
+    <h2>Choose to your data</h2>
+    <form action="/thanks" method="POST">
+        <button type="submit" name="deleteprofile"> DELETE PERMENANTLY</button>
+    </form>
+
+</section>
+
+<style>
+    .bolder{color: white; font-weight: bolder; font-size: 48px;} .petition {
+    display: flex; flex-direction: column; height: 100vh; padding: 1em;
+    box-sizing: border-box; color: rgb(8, 8, 8); background:
+    url(/naja-bertolt-jensen-oxntvdNJb9o-unsplash.jpg) center center no-repeat;
+    background-size: cover; align-items: center; justify-content: center;
+    align-content: stretch; } img { background-color: rgb(215, 222, 228);
+    border: 3px; border-radius: 15px; }
+
+</style>

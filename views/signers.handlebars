@@ -1,0 +1,18 @@
+<section class="petition">
+    <header class="petition-header">
+        <h1 class="petition-title">Those Also Signed!</h1>
+    </header>
+
+    <footer class="petition-footer">
+        {{#signers}}
+            {{#if city}}
+                <ul>
+                    <li><a href="{{homepage}}">{{firstname}} {{lastname}}</a>
+                        {{age}}
+                        <a href="/signers/{{city}}">{{city}} </a></li>
+                </ul>
+            {{/if}}
+        {{/signers}}
+    </footer>
+
+</section>

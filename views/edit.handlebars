@@ -1,0 +1,62 @@
+<section class="petition">
+
+    <header class="petition-header">
+
+        <h3>You can edit your profile here</h3>
+
+    </header>
+
+    <footer class="petition-footer">
+        <form action="/edit" method="POST">
+
+        {{#signers}}
+     
+
+            <label>First Name</label>
+            <input type="text" name="firstName" value="{{firstname}}" size="35" />
+            <br />
+
+            <label>Last Name</label>
+            <input type="text" name="lastName" value="{{lastname}}" size="35" />
+            <br />
+
+            <label>Your Email</label>
+            <input type="email" name="email" value="{{email}}" size="35" />
+            <br />
+
+            <label>Password</label>
+            <input
+                type="password"
+                name="password"
+                {{!-- value="&#9679;&#9679;&#9679;&#9679;&#9679;" --}}
+                size="35"
+            />
+            <br />
+
+            <label>Age</label>
+            <input type="text" name="age" value="{{age}}" size="35" />
+            <br />
+
+            <label>City</label>
+            <input type="text" name="city" value="{{city}}" size="35" />
+            <br />
+
+            <label>Home Page</label>
+            <input type="text" name="homepage" value="{{homepage}}" size="35" />
+            <br />
+
+            <button class="button button-primary" type="submit">UPDATE</button>
+            <br />
+        </form>
+
+{{/signers}}
+    </footer>
+
+    <header class="petition-header">
+
+        <h3>Back to <a href="/thanks">Signature Page</a></h3>
+
+    </header>
+  
+
+</section>

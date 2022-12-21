@@ -1,0 +1,61 @@
+/* * {
+    box-sizing: border-box;
+}
+
+form {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+h1,
+h2,
+p {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    border: 1px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#text-area {
+    background-color: #f7f7f7;
+}
+
+#my-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100vh;
+}
+
+#signature-canvas {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input:hover {
+    background-color: cadetblue;
+} */
