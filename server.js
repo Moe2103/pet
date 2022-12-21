@@ -126,8 +126,8 @@ app.use(
 app.use((req, res, next) => {
     if (
         (req.url.startsWith("/login") ||
-            req.url.startsWith("/registration") ||
-            req.url.startsWith("/petition")) &&
+            req.url.startsWith("/registration")
+            ) &&
         req.session.reglog
     ) {
         res.redirect("/thanks");
