@@ -1,0 +1,16 @@
+{{#signers}}
+    <div class="signer">
+        {{#if homepage}}
+            <p><a target="_blank" href="http://{{homepage}}">{{firstname}}
+                    {{lastname}}</a>
+                {{age}}
+                <a href="/signers_{{city}}">{{city}}</a></p>
+        {{else}}
+            <p>{{firstname}}
+                {{lastname}}
+                {{age}}
+                <a href="/signers_{{city}}">{{city}}</a></p>
+        {{/if}}
+        <p>{{getPrettyDate signed_at}}</p>
+    </div>
+{{/signers}}

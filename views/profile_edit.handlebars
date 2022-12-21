@@ -1,0 +1,73 @@
+<h1>Profile</h1>
+
+<section class="form-container">
+    <p><a href="/">Go to homepage</a></p>
+    <form action="/profile_edit" method="post">
+        <div class="form-fields">
+            <label for="firstName">
+                First Name
+                <input
+                    required
+                    type="text"
+                    name="firstName"
+                    {{#if userData.firstname}}
+                    value={{userData.firstname}}
+                    {{/if}}
+                />
+            </label>
+            <label for="lastName">
+                Last Name
+                <input
+                    required
+                    type="text"
+                    name="lastName"
+                    {{#if userData.lastname}}
+                    value={{userData.lastname}}
+                    {{/if}}
+                />
+            </label>
+            <label for="email">
+                Email
+                <input 
+                    required
+                    type="email"
+                    name="email"
+                    {{#if userData.email}}
+                    value={{userData.email}}
+                    {{/if}}
+                />
+            </label>
+            <label for="pass">
+                Password
+                <input type="text" name="password" />
+            </label>
+            <label for="age">
+                Age
+                <input type="number" min=1 name="age" 
+                {{#if userData.age}}
+                value={{userData.age}}
+                {{/if}}
+                />
+            </label>
+            <label for="city">
+                City
+                <input type="text" name="city" 
+                {{#if userData.city}}
+                value={{userData.city}}
+                {{/if}}
+                 />
+            </label>
+            <label for="homepage">
+                Homepage
+                <input
+                    type="text"
+                    name="homepage"
+                    {{#if userData.homepage}}
+                    value={{userData.homepage}}
+                    {{/if}}
+                />
+            </label>
+        </div>
+        <button>Save changes</button>
+    </form>
+</section>

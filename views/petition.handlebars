@@ -1,0 +1,64 @@
+<h1>We want Spätis open on Sundays!</h1>
+
+<section class="petition">
+    <section class="description">
+        <img src="spati.jpg" alt="spatkauf" />
+        <p>
+            To the residents of
+            <strong>Berlin</strong>, we are writing to you today to ask for your
+            support in our campaign to keep spätis open on Sundays. As many of
+            you may already know, currently spätis are required to close on
+            Sundays, but we believe that allowing them to remain open would
+            provide a valuable service to our community.
+        </p>
+        <p>
+            On Sundays, many of us have errands to run, groceries to buy, and
+            other essential items to purchase. Supermarkets are closed, apart
+            from some exceptions. Having spätis open on Sundays would provide a
+            convenient and accessible option for us to make these purchases.
+            Additionally, allowing spätis to remain open on Sundays would
+            provide an economic boost for the businesses that operate them, as
+            well as the employees who work there.</p>
+        <p>
+            We understand that some may argue that spätis should remain closed
+            on Sundays to give employees a day of rest, but we believe that this
+            can be accommodated by allowing spätis to remain open with limited
+            hours. This would still provide the necessary convenience for
+            residents and support for businesses, while also allowing employees
+            to have a day of rest.
+        </p>
+        <p>
+            Join us in our campaign to keep spätis open on Sundays!
+        </p>
+    </section>
+
+    <section class="form-container">
+        <form action="/sign" method="post">
+            {{#if signed}}
+                <h3>Thanks for signing!</h3>
+                <img src="{{signature}}" alt="signature" />
+            {{else}}
+                <label for="signature">
+                    You can sign here
+                    <canvas height="100px"></canvas>
+                    <input
+                        required
+                        class="hidden"
+                        type="text"
+                        name="signature"
+                    />
+                </label>
+                <button>Submit</button>
+            {{/if}}
+            <p><a href="/signers">See all {{count}} signers</a></p>
+            <p><a href="/profile_edit">Edit your profile</a></p>
+        </form>
+        {{#if signed}}
+            <p><button id="unsign-btn" class="btn-link">Delete your signature</button></p>
+        {{/if}}
+         <form action="/logout" method="post">
+         <p><button class="btn-link">Log out</button></p>
+        </form> 
+    </section>
+</section>
+        {{> popUp}}

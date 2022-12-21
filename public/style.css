@@ -1,0 +1,157 @@
+body {
+    background: #ef4642;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    background-color: black;
+    color: #ef4642;
+    font-size: 40px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.petition {
+    display: flex;
+}
+
+.description {
+    margin: 2rem 1rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description img {
+    width: 75%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+canvas {
+    margin: 10px 0;
+    border-radius: 0.5rem;
+    cursor: crosshair;
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: rgb(160, 255, 250);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    text-decoration: unset;
+}
+
+p {
+    text-align: center;
+}
+
+.btn-link {
+    color: rgb(103, 255, 247);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    border: 0;
+    font-size: inherit;
+    box-shadow: unset;
+    background-color: unset;
+    cursor: pointer;
+}
+
+.btn-link:hover,
+a:hover {
+    color: rgb(255, 217, 27);
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgb(255, 0, 51);
+}
+
+button {
+    box-shadow: 0 0 12px rgb(70, 0, 0);
+    font-family: "Poppins", sans-serif;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.petition .form-container {
+    margin: 4rem 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    align-items: center;
+}
+
+.petition form {
+    max-width: 440px;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 20px 0;
+    gap: 10px;
+}
+
+input {
+    border: 1px solid rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.popUp {
+    background: rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 1px rgb(255, 0, 51);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 0.5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    width: 420px;
+    top: 25%;
+    left: 25%;
+}
+
+.popUpChild {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#unsignForm {
+    flex-direction: row;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* THANKS */
+.thanks-container {
+    text-align: center;
+}
+
+/* SIGNERS */
+.signers-container {
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.signer {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
