@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+}
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar h1 a {
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+}
+
+#navbar h1 {
+    color: #fff;
+    padding: 0.5rem;
+    margin: 0 0.25rem;
+}
+
+#navbar h1:hover {
+    background: #1cf018;
+    border-radius: 5px;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background: #f008ab;
+    border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+    background: #333 url("/healthykids.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+
+    /* Overlay */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#showcase-thanks {
+    background: #333
+        url("https://img.freepik.com/premium-vector/colorful-painted-hands-little-children_29937-8849.jpg?w=2000")
+        no-repeat center center/cover;
+    height: 100vh;
+    color: rgb(4, 4, 4);
+}
+
+#showcase-thanks .showcase-content-thanks {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+
+    /* Overlay */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.l-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #e53ac3;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnCanvas {
+    display: inline-block;
+    color: #fff;
+    background: #3d3805;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.75rem 0;
+}
+
+.inp {
+    display: inline-block;
+    color: rgb(6, 5, 5);
+    background: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#canvass {
+    cursor: crosshair;
+    background-color: paleturquoise;
+    border-radius: 5px;
+}
+/*Footer*/
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-group {
+    margin: 2rem 0;
+}
+/* Utility Classes  */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+/*Registration Page*/
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+#showcase-register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    color: #fff;
+}
+
+.container-register {
+    position: absolute;
+    border-radius: 5px;
+    height: 600px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/*for edit form*/
+.container-edit {
+    position: absolute;
+    border-radius: 5px;
+    height: 800px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin: 0.75rem 0;
+    color: #333;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.registration-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.registration-control label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.registration-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 200;
+    font-size: 14px;
+    padding: 0.5rem 2rem;
+}
+
+.registration-control input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.registration-control.success input {
+    border-color: var(--success-color);
+}
+
+.registration-control.error input {
+    border-color: var(--error-color);
+}
+
+.registration-control small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.registration-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    display: inline-block;
+    color: #fff;
+    background: #e53ac3;
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttn {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 2rem;
+}

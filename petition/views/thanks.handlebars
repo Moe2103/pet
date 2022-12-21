@@ -1,0 +1,30 @@
+<section>
+
+    <!-- Header:Showcase -->
+    <header id="showcase-thanks">
+        <div class="showcase-content-thanks">
+            <h1 class="l-heading">
+
+                Thank you for signing our Petition
+            </h1>
+
+            <div>
+                <a href="/signers" class="l-heading">See all the
+                    {{signatories}}
+                    signers</a>
+
+            </div>
+            <div>
+                <img src={{currentSignature}} alt="" />
+            </div>
+            <a href="/profile/edit" class="l-heading">Edit Your Profile</a>
+
+            <form id="delSig" action="/delete" method="POST">
+                <button class="buttn l-heading" type="submit">Delete Your
+                    Signature</button>
+            </form>
+
+        </div>
+    </header>
+
+</section>

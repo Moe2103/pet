@@ -1,0 +1,95 @@
+<link rel="stylesheet" href="/style.css" />
+<section id="showcase-register">
+
+    <div class="container-edit">
+
+        <form id="form" , class="form" action="/profile/edit" method="POST">
+            <h2>Edit Your Profile</h2>
+
+            {{#userprofile}}
+
+                <div class="registration-control">
+                    <label for="firstname">First Name</label>
+                    <input
+                        type="text"
+                        id="firstname"
+                        placeholder="Enter First Name"
+                        name="firstname"
+                        value={{first}}
+                    />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="registration-control">
+                    <label for="lastname">Last Name</label>
+                    <input
+                        type="text"
+                        id="lastname"
+                        placeholder="Enter Last Name"
+                        name="lastname"
+                        value={{last}}
+                    />
+                    <small>Error Message</small>
+                </div>
+                <div class="registration-control">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="text"
+                        id="email"
+                        placeholder="Enter Email"
+                        name="email"
+                        value={{email}}
+                    />
+                    <small>Error Message</small>
+                </div>
+                <div class="registration-control">
+                    <label for="password">Password</label>
+                    <input
+                        type="text"
+                        id="password"
+                        placeholder="Enter Password"
+                        name="password"
+                    />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="registration-control">
+                    <label for="age">Age</label>
+                    <input
+                        type="text"
+                        id="age"
+                        placeholder="Enter Age"
+                        name="age"
+                        value={{age}}
+                    />
+                    <small>Error Message</small>
+                </div>
+
+                <div class="registration-control">
+                    <label for="city">City</label>
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter City"
+                        name="city"
+                        value={{city}}
+                    />
+                    <small>Error Message</small>
+                </div>
+                <div class="registration-control">
+                    <label for="homepage">Homepage</label>
+                    <input
+                        type="text"
+                        id="homepage"
+                        placeholder="Enter Homepage"
+                        name="homepage"
+                        value={{homepage}}
+                    />
+                    <small>Error Message</small>
+                </div>
+                <button type="submit" name="submitButton">UPDATE</button>
+            {{/userprofile}}
+        </form>
+
+    </div>
+</section>

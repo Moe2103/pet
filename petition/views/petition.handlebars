@@ -1,0 +1,72 @@
+<section>
+
+    <!-- Header:Showcase -->
+    <header id="showcase">
+        <div class="showcase-content">
+
+            <h1 class="l-heading">
+                PETITION: Demand the Senate Increase Paediatric Hospital Funding
+            </h1>
+            <p>During winter, many sick kids have to wait for long hours in
+                hospitals due to bed shortage. Urge the senate to act now to
+                increase funding for pediatric hospital by signing our petition.
+            </p>
+
+            <a href="#what" class="btn">Read More</a>
+
+            <form action="/petition" method="POST">
+
+                <div>
+                    <canvas
+                        id="canvass"
+                        width="400px"
+                        height="100px"
+                        name="canvas"
+                    ></canvas>
+
+                    <input
+                        type="hidden"
+                        id="canvasHidden"
+                        name="EncodedSignature"
+                    />
+
+                    <div>
+
+                        <input
+                            type="button"
+                            value="save"
+                            class="btnCanvas"
+                            id="btn"
+                            size="30"
+                            onclick="save()"
+                        />
+                        <input
+                            type="button"
+                            value="clear"
+                            class="btnCanvas"
+                            id="clr"
+                            size="23"
+                            onclick="erase()"
+                        />
+                    </div>
+
+                </div>
+                <div class="form-group">
+
+                    {{! <label for="first_name">First Name</label>
+                    <input class="inp" type="text" name="first_name" />
+                    <label for="last_name">Last Name</label>
+                    <input class="inp" type="text" name="last_name" /> }}
+                    <button
+                        class="btn"
+                        type="submit"
+                        value="submit"
+                    >Submit</button>
+                </div>
+
+            </form>
+
+        </div>
+    </header>
+
+</section>

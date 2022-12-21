@@ -1,0 +1,32 @@
+<section>
+    <!-- Header:Showcase -->
+    <header id="showcase-thanks">
+        <div class="showcase-content-thanks">
+            <h1 class="l-heading">
+                Thank you for signing our Petition
+            </h1>
+            <div>
+
+                {{#records}}
+
+                    <div><h4>
+                            <a href="{{homepage}}">
+                                {{first}}
+                                {{last}}
+                            </a>
+
+                            {{age}}
+                            <a href="signers/{{city}}">
+
+                                {{city}}
+                            </a>
+
+                        </h4></div>
+
+                {{/records}}
+            </div>
+
+        </div>
+    </header>
+
+</section>
