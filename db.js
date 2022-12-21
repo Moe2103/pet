@@ -23,11 +23,9 @@
 // module.exports = { addSignature, getAllSignature };
 
 require("dotenv").config();
-const { SQL_USER, SQL_PASSWORD } = process.env;
+const { SQL_USER, SQL_PASSWORD, DB_URL } = process.env;
 const spicedPg = require("spiced-pg");
-const db = spicedPg(
-    `postgres:${SQL_USER}:${SQL_PASSWORD}@localhost:5432/petition`
-);
+const db = spicedPg(DB_URL);
 
 module.exports.getAllSignatures = () => {
     return db.query(`SELECT * FROM signatures;`);
