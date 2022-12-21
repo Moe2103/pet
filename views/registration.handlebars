@@ -1,0 +1,53 @@
+<div class="registration">
+    <p id="">Willkommen auf der offiziellen Seite um deutsches Wohnen zu
+        enteigenen.</p><br /><br />
+
+    <br /><br />
+
+    {{#if warning}}{{/if}}
+</div>
+
+<p class="registration">Bitte registriere dich um an der Petition teilnehmen zu
+    können</p>
+<form action="/registration" method="POST">
+    <div id="input-field">
+        <input
+            class="firstName"
+            type="text"
+            name="firstName"
+            placeholder="First name"
+        />
+        <input
+            class="lastLname"
+            type="text"
+            name="lastName"
+            placeholder="Last name"
+        /><br />
+        <input
+            class="email"
+            type="text"
+            name="email"
+            placeholder="your E-mail"
+        />
+        <input
+            class="input-pass"
+            type="password"
+            name="password"
+            placeholder="Password"
+        /><br />
+
+        <input id="button" type="submit" value="Sign Up" /><br />
+        <br />
+        <br />
+    </div>
+    <p class="registration">Member ? Log in&nbsp;<a
+            href="/login"
+            class="registration"
+        > here&nbsp; </a>
+        please.</p>
+</form>
+
+<img
+    id="foto"
+    src="https://www.dwenteignen.de/wp-content/uploads/2021/04/was-wir-fordern-1024x683.jpg"
+/>

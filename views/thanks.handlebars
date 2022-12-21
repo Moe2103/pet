@@ -1,0 +1,15 @@
+<div class="thanks">
+    <h1>Thanks
+        {{firstName}}
+    </h1>
+
+    <a href="/signers">signed in total:
+        {{Signers}}</a><br />
+    <a href="/edit">Change data</a><br />
+    <form action="/delete-sig" method="POST">
+        <input id="button" type="submit" value="Delete signature" />
+    </form>
+    <form action="/delete-user" method="POST">
+        <input id="delBtn" type="submit" value="Delete user" /><br />
+    </form>
+</div>

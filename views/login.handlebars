@@ -1,0 +1,24 @@
+<div class="registration">
+
+    <p>log in:</p>
+    {{#if warning}}{{/if}}
+</div>
+<form action="/login" method="POST">
+    <div>
+        <input
+            class="input-email"
+            type="text"
+            name="email"
+            placeholder="Your E-mail Adress"
+        />
+        <input
+            class="input-pass"
+            type="password"
+            name="password"
+            placeholder="Chose Password"
+        /><br />
+    </div>
+    <input id="loginBtn" type="submit" value="Enter" /><br />
+    <p>If you don't have an account, register please:
+        <a href="/registration">here</a>.</p>
+</form>

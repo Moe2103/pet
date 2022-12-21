@@ -1,0 +1,40 @@
+<H2 class="H2">Deutsches Wohnen enteigenen</H2>
+
+<br />
+
+<br />
+
+<br />
+<p id="text">Wir fordern vom Berliner Senat, alle Maßnahmen einzuleiten, die zur
+    Überführung von Immobilien in Gemeineigentum erforderlich sind: Private
+    profitorientierte Immobiliengesellschaften, die mehr als 3.000 Wohnungen in
+    Berlin besitzen, werden nach Artikel 15 GG enteignet, um ihre Bestände in
+    Gemeineigentum zu überführen. Genossenschaften sollen nicht enteignet
+    werden. Die betroffenen Unternehmen werden deutlich unter Marktwert
+    entschädigt. Zur Verwaltung der Bestände wird eine Anstalt des öffentlichen
+    Rechts (AöR) geschaffen. In ihrer Satzung wird verankert, dass die Bestände
+    der AöR nicht privatisiert werden dürfen. In der AöR werden die in
+    Gemeineigentum überführten Bestände unter demokratischer Beteiligung von
+    Stadtgesellschaft, Mieter:innen, Beschäftigten und Senat verwaltet.
+</p><br /><br /><br />
+<img
+    id="foto"
+    src="https://www.dwenteignen.de/wp-content/uploads/2021/04/was-wir-fordern-1024x683.jpg"
+/>
+<div class="petition">
+    <form action="/petition" method="POST">
+        {{! <div class="petition"> }}
+        <p>Welcome {{fisrtName}} {{lastName}}</p>
+
+        {{#if warning}}
+            <p>Please sign</p>
+        {{/if}}
+        <p>Sign here:</p>
+        <input style="display: none;" name="signature" value="" />
+        <canvas id="canvas" width="280px" height="70px"></canvas><br />
+        <input type="submit" value="Submit" /><br />
+        <p> signed: {{Signers}}</p>
+        {{! </div> }}
+    </form>
+    <script defer src="/canvas.js"></script>
+</div>

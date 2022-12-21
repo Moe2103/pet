@@ -1,0 +1,19 @@
+<div class="profile">
+
+    <p>Bitte fülle das formular aus für weitere Informationen die wir von dir
+        benötigen
+        <br /></p><br /><br />
+    {{#if warning}}{{/if}}
+</div>
+<form action="/profile" method="POST">
+    <div class="data">
+        <input type="text" name="age" placeholder="Age" /><br />
+        <input type="text" name="city" placeholder="City" /><br />
+        <input type="text" name="page" placeholder="Your Page" /><br />
+
+    </div>
+    <br />
+    <br />
+    <input id="profile1" type="submit" value="Save Data" /><br />
+
+</form>

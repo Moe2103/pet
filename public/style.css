@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Design for registration page */
+body {
+    background-color: orange;
+}
+
+.registration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+#input-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    display: flex;
+    justify-content: end;
+}
+
+#foto {
+    display: flex;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Design for profile page */
+
+.profile {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.data {
+    display: flex;
+    justify-content: center;
+}
+
+#profile1 {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Design for petition page  */
+.H2 {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+#text {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.petition {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.signers {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}

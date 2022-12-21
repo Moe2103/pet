@@ -1,0 +1,60 @@
+<div class="registration">
+
+    <p class="text-petition">Edit your profile:</p>
+    {{#if showWarning}}
+        <p class="text-petition warning">Please fill with correct data</p>
+    {{/if}}
+</div>
+<form action="/edit" method="POST">
+    <div>
+        <input
+            class="input-firstName"
+            type="text"
+            name="firstName"
+            placeholder="First name"
+            value={{oneUser.first}}
+        />
+        <input
+            class="input-lastName"
+            type="text"
+            name="lastName"
+            placeholder="Last name"
+            value={{oneUser.last}}
+        /><br />
+        <input
+            class="input-email"
+            type="text"
+            name="email"
+            placeholder="example@gmail.com"
+            value={{oneUser.email}}
+        />
+        <input
+            class="input-pass"
+            type="password"
+            name="password"
+            placeholder="New Password"
+            value=""
+        /><br />
+        <div class="input-user-data">
+            <input
+                type="text"
+                name="age"
+                placeholder="Age"
+                value={{oneUser.age}}
+            /><br />
+            <input
+                type="text"
+                name="city"
+                placeholder="City"
+                value={{oneUser.city}}
+            /><br />
+            <input
+                type="text"
+                name="page"
+                placeholder="Your Homepage"
+                value={{oneUser.url}}
+            /><br />
+        </div>
+    </div>
+    <input id="editBtn" type="submit" value="Save data" /><br />
+</form>
