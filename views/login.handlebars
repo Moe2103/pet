@@ -1,0 +1,16 @@
+<div class="registration">
+    <p class="title-petition">No smoking in public places</p>
+    <img src="/no-smoking-sign.png" alt="No Smoking Sign" />
+    <p class="text-petition">Please log in:</p>
+    {{#if showWarning}}
+        <p class="text-petition warning">Please fill with correct data</p>
+    {{/if}}
+</div>
+<form action="/login" method="POST">
+    <div>
+        <input class="input-email" type="text" name="email" placeholder="example@gmail.com">
+        <input class="input-pass" type="password" name="password" placeholder="Password"><br>
+    </div>
+     <input id="loginBtn" type="submit" value="Enter"><br>
+     <p class="text-petition">If you don't have an account, register <a href="/registration">here</a>.</p>
+</form>

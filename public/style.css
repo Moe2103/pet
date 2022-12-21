@@ -1,0 +1,127 @@
+* {
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: "Martian Mono", monospace;
+    color: black;
+}
+
+html { 
+  background: url(/city-fog.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img {
+    width: 200px;
+}
+
+.thanks {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Martian Mono", monospace;
+}
+
+.thanks-text {
+    width: 520px;
+    text-align: center;
+}
+
+input[type=text], input[type=password], input[type=submit] {
+  padding:10px;
+  background: transparent;
+  border: none;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+  cursor: pointer;
+}
+
+#delBtn {
+  box-shadow: none;
+}
+
+.signers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Martian Mono", monospace;
+}
+
+.signers-text {
+    width: 600px;
+    text-align: center;
+}
+
+.petition,
+.registration {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-petition {
+    font-family: "Rubik 80s Fade", cursive;
+    width: 600px;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+
+.text-petition {
+    font-family: "Martian Mono", monospace;
+    width: 600px;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.warning {
+    color: red;
+}
+
+canvas {
+    border: 2px dotted black;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-credo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.input-personal {
+    margin: 20px 0px;
+}
+
+.input-user-data {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 10px; */
+}
+
+.input-profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#delBtn {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    font-family: "Martian Mono", monospace;
+    font-size: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}

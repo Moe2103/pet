@@ -1,0 +1,14 @@
+<div class="signers">
+    <h1>List of signers ({{signersCount}}):</h1>
+    <ul class="signers-text" style="list-style: none;">
+        {{#each allData}}
+            <li>{{#if url}}<a href="{{url}}" target="_blank">{{first}} {{last}}</a>{{else}}{{first}} {{last}}{{/if}}
+            {{#if age}}age: {{age}}{{/if}}
+            {{#if city}}<a href="/signers/{{city}}" target="_blank">{{city}}</a>{{/if}}
+            </li>
+        {{/each}}
+    </ul>
+    <form action="/signers" method="POST">
+     <input id="editBtn" type="submit" value="Back"><br>
+    </form>
+</div>

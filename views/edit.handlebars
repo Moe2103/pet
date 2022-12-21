@@ -1,0 +1,34 @@
+<div class="registration">
+    <img src="/no-smoking-sign.png" alt="No Smoking Sign" />
+    <p class="text-petition">Edit your profile:</p>
+    {{#if showWarning}}
+        <p class="text-petition warning">Name, last name, email fields can't be empty</p>
+    {{/if}}
+    {{#if linkWarning}}
+        <p class="text-petition warning">The link must start with http(s)://</p>
+    {{/if}}
+</div>
+<form action="/edit" method="POST">
+    <div>
+        <input class="input" type="text" name="fname" placeholder="First name" value={{oneUser.first}}>
+        <input class="input" type="text" name="lname" placeholder="Last name" value={{oneUser.last}}><br>
+        <input class="input" type="text" name="email" placeholder="example@gmail.com" value={{oneUser.email}}>
+        <input class="input" type="password" name="password" placeholder="New Password" value=""><br>
+        <div class="input-user-data">
+            <div class="column">
+                {{!-- <label class="input" for="age">Age:</label><br>
+                <label class="input" for="city">City:</label><br>
+                <label class="input" for="page">Page:</label><br> --}}
+                <p class="input-personal">Age:</p>
+                <p class="input-personal">City:</p>
+                <p class="input-personal">Page:</p>
+            </div>
+            <div class="column">
+              <input class="input" type="text" name="age" placeholder="Age" value={{oneUser.age}}><br>
+              <input class="input" type="text" name="city" placeholder="City" value={{oneUser.city}}><br>
+              <input class="input" type="text" name="page" placeholder="https://www.page.com" value={{oneUser.url}}><br>
+            </div>
+        </div>
+    </div>
+     <input id="editBtn" type="submit" value="Save data"><br>
+</form>
