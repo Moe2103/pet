@@ -1,0 +1,22 @@
+<h3>Tell us more about you!</h3>
+<section>
+{{#if ops}}
+    <p><b>Ops, something went wrong. Sorry.</b></p>
+{{/if}}
+</section>
+<section>
+    <form action="/profile" method="POST" id="profile">
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br><br>         
+        <label for="homepage">Homepage:</label><br>
+        <input type="text" id="homepage" name="homepage"><br><br>
+        <div>
+            <button type="submit" value="submit">Submit</button>
+        </div>
+    </form>
+</section>
+<footer>
+    <a href="/logout">Log out</a>
+</footer>
